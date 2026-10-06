@@ -88,8 +88,6 @@
 
 </div>
 
-
-
 ---
 
 ### 🛠️ Tech Stack & Skills
@@ -129,7 +127,6 @@
 
 | Project | Description | Tech Stack | Live Demo |
 | :--- | :--- | :--- | :---: |
-| **Wire Terrain 3D** | Procedural WebGL wireframe flight simulation with GPU vertex elevation noise & sun shader. | `WebGL` `GLSL` `Originkit` | [🔗 Preview](./wire-terrain.html) |
 | **Code Student Portal** | Interactive web portal for student coding projects, learning resources & full-stack tools. | `HTML5` `CSS3` `JavaScript` | [🔗 Preview](https://mohan095.github.io/Mohan_0/) |
 | **Apple 3D Game** | 3D web interactive game hosted on Vercel featuring physics and 60fps animations. | `Three.js` `WebGL` `Vercel` | [🔗 Preview](https://game3-d-red.vercel.app/) |
 | **Karpagam Trader** | Enterprise commercial website showcasing catalog, business offerings, and inquiries. | `Bootstrap` `Responsive` `JS` | [🔗 Preview](https://mohan095.github.io/Karpagam-Trader/) |
