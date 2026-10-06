@@ -1,0 +1,236 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 230" width="100%" height="230" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&amp;family=Outfit:wght@500;700;800&amp;display=swap');
+
+      .container-bg {
+        fill: #0d1117;
+        stroke: rgba(0, 255, 136, 0.3);
+        stroke-width: 1.5;
+        rx: 16px;
+      }
+
+      .slide {
+        opacity: 0;
+        animation: cycleSlides 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+
+      /* Slide Keyframes: 5 slides, each showing for 4s (20% of 20s) */
+      .slide-1 { animation-delay: 0s; }
+      .slide-2 { animation-delay: 4s; }
+      .slide-3 { animation-delay: 8s; }
+      .slide-4 { animation-delay: 12s; }
+      .slide-5 { animation-delay: 16s; }
+
+      @keyframes cycleSlides {
+        0% {
+          opacity: 0;
+          transform: translateY(16px) scale(0.98);
+        }
+        3% {
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+        }
+        20% {
+          opacity: 1;
+          transform: translateY(0px) scale(1);
+        }
+        23% {
+          opacity: 0;
+          transform: translateY(-16px) scale(0.98);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(16px) scale(0.98);
+        }
+      }
+
+      .card-inner {
+        fill: #161b22;
+        stroke: rgba(0, 255, 136, 0.4);
+        stroke-width: 1.2;
+        rx: 14px;
+        filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+      }
+
+      .title-text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 800;
+        font-size: 21px;
+        fill: #00ff88;
+        letter-spacing: -0.3px;
+      }
+
+      .desc-text {
+        font-family: 'Outfit', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        fill: #c9d1d9;
+        line-height: 1.5;
+      }
+
+      .badge-tag {
+        font-family: 'Fira Code', monospace;
+        font-weight: 700;
+        font-size: 11px;
+        fill: #00ff88;
+      }
+
+      .badge-tag-bg {
+        fill: rgba(0, 255, 136, 0.12);
+        stroke: rgba(0, 255, 136, 0.35);
+        stroke-width: 1;
+        rx: 6px;
+      }
+
+      .icon-box {
+        fill: rgba(0, 255, 136, 0.15);
+        stroke: #00ff88;
+        stroke-width: 1.5;
+        rx: 12px;
+      }
+
+      .dot-track {
+        fill: rgba(255, 255, 255, 0.15);
+        rx: 4px;
+      }
+
+      .dot-active {
+        fill: #00ff88;
+        filter: drop-shadow(0 0 6px #00ff88);
+        animation: moveDot 20s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+
+      @keyframes moveDot {
+        0%, 20% { transform: translateX(0px); }
+        23%, 40% { transform: translateX(24px); }
+        43%, 60% { transform: translateX(48px); }
+        63%, 80% { transform: translateX(72px); }
+        83%, 100% { transform: translateX(96px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="950" height="230" class="container-bg" />
+
+  <!-- Top Carousel Header Bar -->
+  <text x="32" y="34" font-family="'Outfit', sans-serif" font-weight="700" font-size="13" fill="#8b949e" letter-spacing="1">FEATURED PROJECTS &amp; INTERACTIVE ROTATION</text>
+  
+  <!-- Live Rotating Indicator Pill -->
+  <g transform="translate(815, 20)">
+    <rect width="102" height="22" rx="11" fill="rgba(0, 255, 136, 0.15)" stroke="#00ff88" stroke-width="1" />
+    <circle cx="12" cy="11" r="4" fill="#00ff88">
+      <animate attributeName="opacity" values="1;0.3;1" dur="1.6s" repeatCount="indefinite" />
+    </circle>
+    <text x="24" y="15" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#00ff88">AUTOPLAY</text>
+  </g>
+
+  <!-- SLIDE 1: Code Student Portal -->
+  <g class="slide slide-1" transform="translate(32, 52)">
+    <rect width="886" height="135" class="card-inner" />
+    <rect x="22" y="22" width="60" height="60" class="icon-box" />
+    <text x="52" y="58" font-size="28" text-anchor="middle">🎓</text>
+    <text x="98" y="44" class="title-text">Code Student Portal</text>
+    <text x="98" y="70" class="desc-text">Interactive modern web portal engineered for student coding repositories, educational resources,</text>
+    <text x="98" y="90" class="desc-text">collaborative project showcases, and developer tools with responsive full-stack features.</text>
+    <g transform="translate(98, 104)">
+      <rect width="70" height="22" class="badge-tag-bg" />
+      <text x="35" y="15" text-anchor="middle" class="badge-tag">HTML5</text>
+      <rect x="78" width="62" height="22" class="badge-tag-bg" />
+      <text x="109" y="15" text-anchor="middle" class="badge-tag">CSS3</text>
+      <rect x="148" width="95" height="22" class="badge-tag-bg" />
+      <text x="195" y="15" text-anchor="middle" class="badge-tag">JavaScript</text>
+      <rect x="251" width="112" height="22" class="badge-tag-bg" />
+      <text x="307" y="15" text-anchor="middle" class="badge-tag">GitHub Pages</text>
+    </g>
+  </g>
+
+  <!-- SLIDE 2: Apple 3D Game -->
+  <g class="slide slide-2" transform="translate(32, 52)">
+    <rect width="886" height="135" class="card-inner" />
+    <rect x="22" y="22" width="60" height="60" class="icon-box" />
+    <text x="52" y="58" font-size="28" text-anchor="middle">🎮</text>
+    <text x="98" y="44" class="title-text">Apple 3D Game (Vercel Production)</text>
+    <text x="98" y="70" class="desc-text">Real-time 3D web game hosted on Vercel featuring smooth 60fps canvas animations, collision physics,</text>
+    <text x="98" y="90" class="desc-text">lighting shaders, interactive gaming controls, and high-performance WebGL geometry rendering.</text>
+    <g transform="translate(98, 104)">
+      <rect width="84" height="22" class="badge-tag-bg" />
+      <text x="42" y="15" text-anchor="middle" class="badge-tag">Three.js</text>
+      <rect x="92" width="82" height="22" class="badge-tag-bg" />
+      <text x="133" y="15" text-anchor="middle" class="badge-tag">WebGL 3D</text>
+      <rect x="182" width="82" height="22" class="badge-tag-bg" />
+      <text x="223" y="15" text-anchor="middle" class="badge-tag">Game Dev</text>
+      <rect x="272" width="76" height="22" class="badge-tag-bg" />
+      <text x="310" y="15" text-anchor="middle" class="badge-tag">Vercel</text>
+    </g>
+  </g>
+
+  <!-- SLIDE 3: Karpagam Trader -->
+  <g class="slide slide-3" transform="translate(32, 52)">
+    <rect width="886" height="135" class="card-inner" />
+    <rect x="22" y="22" width="60" height="60" class="icon-box" />
+    <text x="52" y="58" font-size="28" text-anchor="middle">📈</text>
+    <text x="98" y="44" class="title-text">Karpagam Trader Commercial Portal</text>
+    <text x="98" y="70" class="desc-text">Full enterprise commercial website showcasing multi-category product catalog, business services,</text>
+    <text x="98" y="90" class="desc-text">client inquiry processing, and optimized responsive mobile-first layouts.</text>
+    <g transform="translate(98, 104)">
+      <rect width="90" height="22" class="badge-tag-bg" />
+      <text x="45" y="15" text-anchor="middle" class="badge-tag">Enterprise</text>
+      <rect x="98" width="90" height="22" class="badge-tag-bg" />
+      <text x="143" y="15" text-anchor="middle" class="badge-tag">Bootstrap</text>
+      <rect x="196" width="90" height="22" class="badge-tag-bg" />
+      <text x="241" y="15" text-anchor="middle" class="badge-tag">Responsive</text>
+    </g>
+  </g>
+
+  <!-- SLIDE 4: CodeLab Ultra -->
+  <g class="slide slide-4" transform="translate(32, 52)">
+    <rect width="886" height="135" class="card-inner" />
+    <rect x="22" y="22" width="60" height="60" class="icon-box" />
+    <text x="52" y="58" font-size="28" text-anchor="middle">💻</text>
+    <text x="98" y="44" class="title-text">CodeLab Ultra &amp; Studio Workspace</text>
+    <text x="98" y="70" class="desc-text">Browser-based coding studio workspace with 3D canvas rendering, GSAP spring animations,</text>
+    <text x="98" y="90" class="desc-text">interactive live code execution, and high-frequency UI transitions.</text>
+    <g transform="translate(98, 104)">
+      <rect width="80" height="22" class="badge-tag-bg" />
+      <text x="40" y="15" text-anchor="middle" class="badge-tag">Three.js</text>
+      <rect x="88" width="65" height="22" class="badge-tag-bg" />
+      <text x="120" y="15" text-anchor="middle" class="badge-tag">GSAP</text>
+      <rect x="161" width="95" height="22" class="badge-tag-bg" />
+      <text x="208" y="15" text-anchor="middle" class="badge-tag">JavaScript</text>
+      <rect x="264" width="88" height="22" class="badge-tag-bg" />
+      <text x="308" y="15" text-anchor="middle" class="badge-tag">UI Studio</text>
+    </g>
+  </g>
+
+  <!-- SLIDE 5: My Gallery -->
+  <g class="slide slide-5" transform="translate(32, 52)">
+    <rect width="886" height="135" class="card-inner" />
+    <rect x="22" y="22" width="60" height="60" class="icon-box" />
+    <text x="52" y="58" font-size="28" text-anchor="middle">🖼️</text>
+    <text x="98" y="44" class="title-text">My Gallery &amp; Media Showcase</text>
+    <text x="98" y="70" class="desc-text">High-resolution modern responsive gallery web app featuring CSS Grid masonry layout, interactive modal viewer,</text>
+    <text x="98" y="90" class="desc-text">and integrated Cloudinary media CDN management.</text>
+    <g transform="translate(98, 104)">
+      <rect width="80" height="22" class="badge-tag-bg" />
+      <text x="40" y="15" text-anchor="middle" class="badge-tag">CSS Grid</text>
+      <rect x="88" width="95" height="22" class="badge-tag-bg" />
+      <text x="135" y="15" text-anchor="middle" class="badge-tag">Cloudinary</text>
+      <rect x="191" width="95" height="22" class="badge-tag-bg" />
+      <text x="238" y="15" text-anchor="middle" class="badge-tag">JavaScript</text>
+      <rect x="294" width="80" height="22" class="badge-tag-bg" />
+      <text x="334" y="15" text-anchor="middle" class="badge-tag">Web App</text>
+    </g>
+  </g>
+
+  <!-- Bottom Navigation Dots -->
+  <g transform="translate(420, 206)">
+    <rect x="0" y="0" width="16" height="6" class="dot-track" />
+    <rect x="24" y="0" width="16" height="6" class="dot-track" />
+    <rect x="48" y="0" width="16" height="6" class="dot-track" />
+    <rect x="72" y="0" width="16" height="6" class="dot-track" />
+    <rect x="96" y="0" width="16" height="6" class="dot-track" />
+    <rect x="0" y="0" width="16" height="6" class="dot-active" />
+  </g>
+</svg>

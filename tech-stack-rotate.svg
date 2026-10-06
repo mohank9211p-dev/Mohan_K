@@ -1,0 +1,288 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 170" width="100%" height="170" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600;700&amp;family=Outfit:wght@600;700&amp;display=swap');
+      
+      .bg-rect {
+        fill: #0d1117;
+        stroke: rgba(0, 255, 136, 0.25);
+        stroke-width: 1.5;
+        rx: 16px;
+      }
+      
+      .track-1 {
+        display: flex;
+        animation: scrollLeft 28s linear infinite;
+      }
+      
+      .track-2 {
+        display: flex;
+        animation: scrollRight 26s linear infinite;
+      }
+
+      @keyframes scrollLeft {
+        0% { transform: translateX(0px); }
+        100% { transform: translateX(-960px); }
+      }
+
+      @keyframes scrollRight {
+        0% { transform: translateX(-960px); }
+        100% { transform: translateX(0px); }
+      }
+
+      .badge-card {
+        fill: #161b22;
+        stroke: rgba(0, 255, 136, 0.35);
+        stroke-width: 1.2;
+        rx: 10px;
+        filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));
+      }
+
+      .badge-text {
+        font-family: 'Outfit', 'Fira Code', sans-serif;
+        font-weight: 700;
+        font-size: 13.5px;
+        fill: #ffffff;
+      }
+
+      .badge-sub {
+        font-family: 'Fira Code', monospace;
+        font-weight: 600;
+        font-size: 10px;
+        fill: #00ff88;
+      }
+
+      .glow-particle {
+        animation: pulseGlow 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes pulseGlow {
+        0% { opacity: 0.3; }
+        100% { opacity: 0.8; }
+      }
+    </style>
+
+    <linearGradient id="edgeFadeLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="1" />
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="edgeFadeRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1117" stop-opacity="0" />
+      <stop offset="100%" stop-color="#0d1117" stop-opacity="1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container Box -->
+  <rect width="950" height="170" class="bg-rect" />
+
+  <!-- ROW 1: Rotating Moving Left -->
+  <g transform="translate(0, 22)">
+    <g class="track-1">
+      <!-- Item Set 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#61DAFB" fill-opacity="0.2" stroke="#61DAFB" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#61DAFB" font-family="'Fira Code', monospace">⚛</text>
+        <text x="46" y="24" class="badge-text">React.js</text>
+        <text x="46" y="37" class="badge-sub">Frontend</text>
+      </g>
+
+      <g transform="translate(160, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#3776AB" fill-opacity="0.2" stroke="#3776AB" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#3776AB" font-family="'Fira Code', monospace">🐍</text>
+        <text x="46" y="24" class="badge-text">Python</text>
+        <text x="46" y="37" class="badge-sub">Backend</text>
+      </g>
+
+      <g transform="translate(320, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#F7DF1E" fill-opacity="0.2" stroke="#F7DF1E" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#F7DF1E" font-family="'Fira Code', monospace">JS</text>
+        <text x="46" y="24" class="badge-text">JavaScript</text>
+        <text x="46" y="37" class="badge-sub">ES6+ Engine</text>
+      </g>
+
+      <g transform="translate(480, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#FFA116" fill-opacity="0.2" stroke="#FFA116" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#FFA116" font-family="'Fira Code', monospace">🧩</text>
+        <text x="46" y="24" class="badge-text">LeetCode</text>
+        <text x="46" y="37" class="badge-sub">Algorithms</text>
+      </g>
+
+      <g transform="translate(640, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#00ff88" fill-opacity="0.2" stroke="#00ff88" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#00ff88" font-family="'Fira Code', monospace">3D</text>
+        <text x="46" y="24" class="badge-text">WebGL</text>
+        <text x="46" y="37" class="badge-sub">GLSL Shaders</text>
+      </g>
+
+      <g transform="translate(800, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#FFCA28" fill-opacity="0.2" stroke="#FFCA28" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#FFCA28" font-family="'Fira Code', monospace">🔥</text>
+        <text x="46" y="24" class="badge-text">Firebase</text>
+        <text x="46" y="37" class="badge-sub">Firestore DB</text>
+      </g>
+
+      <!-- Duplicate Set for Seamless Infinite Loop -->
+      <g transform="translate(960, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#61DAFB" fill-opacity="0.2" stroke="#61DAFB" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#61DAFB" font-family="'Fira Code', monospace">⚛</text>
+        <text x="46" y="24" class="badge-text">React.js</text>
+        <text x="46" y="37" class="badge-sub">Frontend</text>
+      </g>
+
+      <g transform="translate(1120, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#3776AB" fill-opacity="0.2" stroke="#3776AB" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#3776AB" font-family="'Fira Code', monospace">🐍</text>
+        <text x="46" y="24" class="badge-text">Python</text>
+        <text x="46" y="37" class="badge-sub">Backend</text>
+      </g>
+
+      <g transform="translate(1280, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#F7DF1E" fill-opacity="0.2" stroke="#F7DF1E" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#F7DF1E" font-family="'Fira Code', monospace">JS</text>
+        <text x="46" y="24" class="badge-text">JavaScript</text>
+        <text x="46" y="37" class="badge-sub">ES6+ Engine</text>
+      </g>
+
+      <g transform="translate(1440, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#FFA116" fill-opacity="0.2" stroke="#FFA116" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#FFA116" font-family="'Fira Code', monospace">🧩</text>
+        <text x="46" y="24" class="badge-text">LeetCode</text>
+        <text x="46" y="37" class="badge-sub">Algorithms</text>
+      </g>
+
+      <g transform="translate(1600, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#00ff88" fill-opacity="0.2" stroke="#00ff88" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#00ff88" font-family="'Fira Code', monospace">3D</text>
+        <text x="46" y="24" class="badge-text">WebGL</text>
+        <text x="46" y="37" class="badge-sub">GLSL Shaders</text>
+      </g>
+
+      <g transform="translate(1760, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#FFCA28" fill-opacity="0.2" stroke="#FFCA28" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#FFCA28" font-family="'Fira Code', monospace">🔥</text>
+        <text x="46" y="24" class="badge-text">Firebase</text>
+        <text x="46" y="37" class="badge-sub">Firestore DB</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ROW 2: Rotating Moving Right -->
+  <g transform="translate(0, 96)">
+    <g class="track-2">
+      <!-- Item Set 2 -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#38B2AC" fill-opacity="0.2" stroke="#38B2AC" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#38B2AC" font-family="'Fira Code', monospace">🌊</text>
+        <text x="46" y="24" class="badge-text">Tailwind</text>
+        <text x="46" y="37" class="badge-sub">Modern UI</text>
+      </g>
+
+      <g transform="translate(160, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#E34F26" fill-opacity="0.2" stroke="#E34F26" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#E34F26" font-family="'Fira Code', monospace">5</text>
+        <text x="46" y="24" class="badge-text">HTML5 &amp; CSS3</text>
+        <text x="46" y="37" class="badge-sub">Semantic Web</text>
+      </g>
+
+      <g transform="translate(320, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#88CE02" fill-opacity="0.2" stroke="#88CE02" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#88CE02" font-family="'Fira Code', monospace">⚡</text>
+        <text x="46" y="24" class="badge-text">GSAP &amp; Three</text>
+        <text x="46" y="37" class="badge-sub">Motion Web</text>
+      </g>
+
+      <g transform="translate(480, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#3448C5" fill-opacity="0.2" stroke="#3448C5" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#3448C5" font-family="'Fira Code', monospace">☁</text>
+        <text x="46" y="24" class="badge-text">Cloudinary</text>
+        <text x="46" y="37" class="badge-sub">Media CDN</text>
+      </g>
+
+      <g transform="translate(640, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#3395FF" fill-opacity="0.2" stroke="#3395FF" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#3395FF" font-family="'Fira Code', monospace">💳</text>
+        <text x="46" y="24" class="badge-text">Razorpay</text>
+        <text x="46" y="37" class="badge-sub">Payments</text>
+      </g>
+
+      <g transform="translate(800, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#F05032" fill-opacity="0.2" stroke="#F05032" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#F05032" font-family="'Fira Code', monospace">⌥</text>
+        <text x="46" y="24" class="badge-text">Git &amp; GitHub</text>
+        <text x="46" y="37" class="badge-sub">DevOps</text>
+      </g>
+
+      <!-- Duplicate Set for Seamless Loop -->
+      <g transform="translate(960, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#38B2AC" fill-opacity="0.2" stroke="#38B2AC" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#38B2AC" font-family="'Fira Code', monospace">🌊</text>
+        <text x="46" y="24" class="badge-text">Tailwind</text>
+        <text x="46" y="37" class="badge-sub">Modern UI</text>
+      </g>
+
+      <g transform="translate(1120, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#E34F26" fill-opacity="0.2" stroke="#E34F26" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#E34F26" font-family="'Fira Code', monospace">5</text>
+        <text x="46" y="24" class="badge-text">HTML5 &amp; CSS3</text>
+        <text x="46" y="37" class="badge-sub">Semantic Web</text>
+      </g>
+
+      <g transform="translate(1280, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#88CE02" fill-opacity="0.2" stroke="#88CE02" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#88CE02" font-family="'Fira Code', monospace">⚡</text>
+        <text x="46" y="24" class="badge-text">GSAP &amp; Three</text>
+        <text x="46" y="37" class="badge-sub">Motion Web</text>
+      </g>
+
+      <g transform="translate(1440, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#3448C5" fill-opacity="0.2" stroke="#3448C5" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#3448C5" font-family="'Fira Code', monospace">☁</text>
+        <text x="46" y="24" class="badge-text">Cloudinary</text>
+        <text x="46" y="37" class="badge-sub">Media CDN</text>
+      </g>
+
+      <g transform="translate(1600, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#3395FF" fill-opacity="0.2" stroke="#3395FF" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#3395FF" font-family="'Fira Code', monospace">💳</text>
+        <text x="46" y="24" class="badge-text">Razorpay</text>
+        <text x="46" y="37" class="badge-sub">Payments</text>
+      </g>
+
+      <g transform="translate(1760, 0)">
+        <rect width="145" height="46" class="badge-card" />
+        <circle cx="24" cy="23" r="12" fill="#F05032" fill-opacity="0.2" stroke="#F05032" stroke-width="1.5" />
+        <text x="24" y="27" font-size="12" text-anchor="middle" fill="#F05032" font-family="'Fira Code', monospace">⌥</text>
+        <text x="46" y="24" class="badge-text">Git &amp; GitHub</text>
+        <text x="46" y="37" class="badge-sub">DevOps</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Left & Right Gradient Shadows for Seamless Fade Out -->
+  <rect x="0" y="0" width="70" height="170" fill="url(#edgeFadeLeft)" />
+  <rect x="880" y="0" width="70" height="170" fill="url(#edgeFadeRight)" />
+</svg>
